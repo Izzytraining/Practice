@@ -219,6 +219,32 @@ header nav ul li {
 
 /*menu style end*/
 
+/*reviews*/
+
+.testimonial-hero {
+  position: relative;
+}
+.testimonial-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform: translate(-50%, -50%);
+
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 1.4rem;
+  width: 80%;
+  height: 100%;
+  font-weight: lighter;
+}
+
+.testimonial-quote {
+  font-size: 6rem;
+}
+
 /*header style begin*/
 @media screen and (min-width: 750px) {
   body {
