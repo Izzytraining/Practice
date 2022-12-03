@@ -95,8 +95,16 @@ header nav ul li {
   font-size: 1rem;
 }
 
+#kiss {
+  width: 860px;
+  height: 450px;
+}
+
 .hero-info img {
   margin: 3rem 0;
+  height: 260px;
+  width: auto;
+  display: flex;
 }
 
 /*hero style end*/
@@ -159,10 +167,62 @@ header nav ul li {
 
 /*speciality style end*/
 
+/*menu style begin*/
+
+.menu-title {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.menu-item {
+  display: flex;
+  margin: 2rem 0;
+  position: relative;
+  align-items: center;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.menu-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  border-bottom: 1px dashed black;
+}
+
+.menu-item:last-child::after {
+  border: none;
+}
+
+.menu-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 1rem;
+}
+
+.menu-item section h3 {
+  margin-bottom: 1rem;
+}
+
+.menu-item h3 span {
+  margin-left: 3rem;
+  font-weight: lighter;
+  color: black;
+}
+
+.menu-item p {
+  color: black;
+}
+
+/*menu style end*/
+
 /*header style begin*/
-@media screen and (min-width: 725px) {
+@media screen and (min-width: 750px) {
   body {
-    max-width: 960px;
+    max-width: 1460px;
     margin: 0 auto;
   }
   main {
@@ -216,7 +276,7 @@ header nav ul li {
   }
 
   .speciality-img {
-    width: 375px;
+    width: 600px;
   }
 
   .price {
@@ -233,6 +293,19 @@ header nav ul li {
   }
   .speciality-item:last-child .speciality-info {
     order: 2;
+  }
+
+  .menu-container {
+    display: flex;
+    padding: 2rem;
+  }
+
+  .menu-title {
+    text-align: center;
+  }
+  .menu-item::after {
+    width: 75%;
+    margin: 0 auto;
   }
 }
 /*header style end*/
