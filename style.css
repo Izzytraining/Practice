@@ -100,6 +100,12 @@ header nav ul li {
   height: 450px;
 }
 
+#hero-img {
+  width: 800px;
+  height: 725px;
+  display: flex;
+}
+
 .hero-info img {
   margin: 3rem 0;
   height: 260px;
@@ -245,6 +251,50 @@ header nav ul li {
   font-size: 6rem;
 }
 
+/*expert style begin*/
+
+.expert {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.expert-img {
+  height: 60vh;
+  width: 40vh;
+  position: center;
+}
+
+.expert-info {
+  background-color: white;
+  width: 80%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto 1.5rem auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.expert-info p {
+  color: firebrick;
+  font-weight: lighter;
+  margin: 1rem 0;
+}
+
+.expert-social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 0 auto;
+  color: maroon;
+}
+
+.expert-social:last-child {
+  color: firebrick;
+}
+
+/*expert style begin*/
+
 /*header style begin*/
 @media screen and (min-width: 750px) {
   body {
@@ -332,6 +382,19 @@ header nav ul li {
   .menu-item::after {
     width: 75%;
     margin: 0 auto;
+  }
+
+  .expert {
+    padding: 2rem;
+  }
+
+  .experts-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .expert-img {
+    height: 350px;
   }
 }
 /*header style end*/
